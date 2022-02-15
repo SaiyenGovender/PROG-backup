@@ -1,0 +1,29 @@
+﻿@model WebApp.Models.Account
+@{
+    ViewBag.Title = "Verify";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+<body>
+    <div class="padding-all">
+        <div class="header">
+            <h1>Verify City</h1>
+        </div>
+        <div class="design-w3l" >
+            <div class="mail-form-agile">
+                <form action="Tables" method="post">
+                    <textarea id="TextArea1" rows="8" cols="20" readonly>@Model.FavCities </textarea>
+                    <p><h1>Enter city name below</h1></p>
+                    <input type="text" name="FavCities" class="padding" placeholder="City name" required="" />
+
+                    <input type="submit" value="Choose city" style="align-items:center">
+                </form>
+            </div>
+            <div class="clear"> </div>
+        </div>
+        <div class="footer">
+            <p>© 2017  Master  Login form. All Rights Reserved | Design by  <a href="https://w3layouts.com/">  w3layouts </a></p>
+        </div>
+    </div>
+</body>
+
